@@ -14,7 +14,6 @@ footer p {
 
 aside{
     flex: 1;
-
 }
 
 @media screen and (min-width:1000px){
@@ -23,7 +22,6 @@ aside{
     }
 }
 
-
 aside article {
     outline: 2px solid black;
     outline: dotted;
@@ -31,7 +29,7 @@ aside article {
     border-radius: 5px;
     position: sticky;
     top: 70px;
-
+    background-color:  rgb(116, 113, 81);
 }
 .logo-side {
     text-align: center;
@@ -47,9 +45,7 @@ aside th{
     text-align: start;
 }
 td {
-    position: relative;
     font-weight:500;
-
 }
 
  main {
@@ -58,7 +54,7 @@ td {
     gap: 1.5rem;
 
  }
- @media screen and (max-width:1000px){
+ @media screen and (max-width:768px){
     main {
         flex-flow: column nowrap;
     }
@@ -89,13 +85,17 @@ td {
     border-radius: 5px;
     background-color:  rgb(255, 255, 255);
     padding: 10px;
-    
 }
 
 h2, h3 {
-    color:  rgb(228, 222, 145);
-    text-shadow: 0 0 2px rgb(0, 0, 0, 0.2);
+    color:  rgb(116, 113, 81);
     padding: 10px;
+    background-color:  rgb(228, 222, 145);
+}
+
+aside h2,h3 {
+    color: #efff;
+    background-color: rgb(116, 113, 81);
 }
 .content p {
     text-align: justify;
@@ -118,7 +118,7 @@ h2, h3 {
     border: 1px soli black;
     text-align: center;
     padding: 60px;
-    line-height:3rem ;
+    line-height:2rem ;
     background-color:  rgb(228, 222, 145);
 }
 
@@ -132,6 +132,7 @@ nav {
     position: sticky;
     top: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 200;
 }
 
 nav ul{
@@ -140,9 +141,7 @@ nav ul{
     display: flex;
     gap: 1rem;
 }
- nav li{
-    
- }
+
 nav a {
     text-decoration: none;
     color: #ffff;
